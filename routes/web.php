@@ -41,13 +41,6 @@ Route::get('choiceMembers' , [GroupController::class , 'choiceMembers'])->name('
 Route::post('registergroup' , [GroupController::class , 'registergroup'])->name('group.registered');
 Route::post('profileuploaded' , [profileController::class , 'uploadimage'])->name('image.uploaded');
 Route::get('/', [Quizz::class , 'getWelcome'])->name('get-welcome');
-Route::get('/quiz', [Quizz::class , 'getQuiz'])->name('get-quiz');
-Route::post('/quiz', [Quizz::class , 'postQuiz'])->name('post-quiz');
-Route::get('/result', [Quizz::class , 'getShownResult'])->name('get-shown-result');
-Route::post('/user', [Quizz::class , 'postAddUser'])->name('post-add-user');
-Route::get('/play-again', [Quizz::class , 'getClearSession'])->name('get-play-again');
-Route::get('/thankyou', [Quizz::class , 'getThankyou'])->name('get-thank-you');
-Route::get('/vue', [Quizz::class , 'getVueQuiz'])->name('get-vue-quiz');
 
 
 
