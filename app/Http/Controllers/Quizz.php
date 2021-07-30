@@ -41,7 +41,7 @@ class Quizz extends Controller
             }])->get();
         }
 
-        // Create ramdom question and shuffle the answers of this question
+
         $rand_question = Vii::randomQuestion($entries->toArray());
         $answers = $rand_question['answers'];
         shuffle($answers);
