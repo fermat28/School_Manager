@@ -73,7 +73,7 @@
                     </a>
                 </li>
                 <li class="mt">
-                    <a class="active" href="">
+                    <a class="active" href="{{route('get-welcome')}}">
                         <i class="fa fa-question-circle"></i>
                         <span>Evaluations</span>
                     </a>
