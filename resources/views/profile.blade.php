@@ -255,17 +255,20 @@
                                             <div class="row centered mt mb">
                                                 <div class="col-sm-4">
                                                     <h1><i class="fa fa-building"></i></h1>
-                                                    <h3>{{$group->note}}</h3>
+                                                    @if($dat != NULL)
+                                                    <h3>{{$dat->bonus}}</h3>
                                                     <h6>NOTE PROVISOIRE</h6>
                                                 </div>
                                                 <div class="col-sm-4">
                                                     <h1><i class="fa fa-trophy"></i></h1>
-                                                    <h3>{{$group->bonus}}</h3>
+                                                    @if($dat != NULL)
+                                                    <h3>{{$dat->bonus}}</h3>
                                                     <h6>BONUS</h6>
                                                 </div>
                                                 <div class="col-sm-4">
                                                     <h1><i class="fa fa-dollar"></i></h1>
-                                                    <h3>{{$group->note + $group->bonus}}</h3>
+                                                    @if($dat != NULL)
+                                                    <h3>{{($dat->note) + ($dat->bonus)}}</h3>
                                                     <h6>NOTE FINAL</h6>
                                                 </div>
                                             </div>
