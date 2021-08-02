@@ -10,14 +10,13 @@ use Illuminate\Http\Request;
 class Quizz extends Controller
 {
     //
-    public function getWelcome(){
+    public function getWelcome() {
         $currentUser = User::where('id','=', session('LoggedUser'))->first();
         $photo = $currentUser->photo;
        // $photo_path = str_replace('\\', '/', storage_path("app\public\storage{$photo}")) ;
         $nom = $currentUser->nom;
         $prenom = $currentUser->prenom;
-        return view('quizz', ['photo' => $photo , 'nom' => $nom , 'prenom' => $prenom]);
+        return view('teachDasboard');
     }
-
 
 }

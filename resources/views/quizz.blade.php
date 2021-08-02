@@ -10,9 +10,6 @@
     box-sizing: border-box
 }
 
-body {
-    background-color: #333
-}
 
 .container {
     background-color: #555;
@@ -113,19 +110,13 @@ body {
         <div class="row mt">
             <div class="col-lg-12">
                 <div class="row content-panel">
-                    <div class="col-md-4 profile-text mt mb centered">
-                        <div class="right-divider">
+                     <div class="col-md-4 profile-text mt mb centered">
 <center><div class="container mt-sm-5 my-1">
     <div class="question ml-sm-5 pl-sm-5 pt-2">
         <div class="py-2 h5"><b>Q. which option best describes your job role?</b></div>
         <div class="ml-md-3 ml-sm-3 pl-md-5 pt-sm-0 pt-3" id="options"> <label class="options">Small Business Owner or Employee <input type="radio" name="radio"> <span class="checkmark"></span> </label> <label class="options">Nonprofit Owner or Employee <input type="radio" name="radio"> <span class="checkmark"></span> </label> <label class="options">Journalist or Activist <input type="radio" name="radio"> <span class="checkmark"></span> </label> <label class="options">Other <input type="radio" name="radio"> <span class="checkmark"></span> </label> </div>
-    </div>
-    <div class="d-flex align-items-center pt-3">
-        <div id="prev"> <button class="btn btn-primary">Previous</button> </div>
-        <div class="ml-auto mr-sm-5"> <button class="btn btn-success">Next</button> </div>
-    </div>
+    </div><br>
 </div></center>
-                        </div>
                         </div>
                         </div>
                         </div>

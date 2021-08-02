@@ -22,14 +22,17 @@ public function check(Request $request){
    ]);
 
    $userInfo = User::where('matricule','=', $request->matricule)->first();
+   $profInfo = User::where('matricule','=', $request->matricule)->where('type' , '=' , 2)->first();
 
-        if(!$userInfo){
+        if(!$userInfo && !$profInfo){
             return back()->with('fail','Matricule incorrect');
-        }else{
-            //check password
-            if(Hash::check($request->password, $userInfo->password)){
+        }elseif(Hash::check($request->password, $userInfo->password)){
                 $request->session()->put('LoggedUser', $userInfo->id);
                 return redirect() -> route('profile');
+
+            }elseif(Hash::check($request->password, $profInfo->password)){
+                $request->session()->put('LoggedUser', $profInfo->id);
+                return redirect() -> route('get-welcome');
 
             }else{
                 return back()->with('fail','Incorrect password');
@@ -37,4 +40,4 @@ public function check(Request $request){
         }
 
 }
-}
+
