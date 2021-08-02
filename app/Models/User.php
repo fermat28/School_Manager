@@ -21,7 +21,7 @@ class User extends Authenticatable
         'name',
         'email',
         'role',
-        'picture',
+        'photo',
         'password',
         'prenom' ,
         'date_nais' ,
