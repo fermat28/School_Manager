@@ -12,11 +12,7 @@
                         <div class="col-md-4 profile-text mt mb centered">
                             <div class="right-divider">
                                 <h4>0</h4>
-                                <h6>Devoirs</h6>
-                                <h4>0</h4>
-                                <h6>Evaluation</h6>
-                                <h4>0</h4>
-                                <h6>Note CC</h6>
+                                <h6>Quizzs</h6>
                             </div>
                         </div>
                         <!-- /col-md-4 -->

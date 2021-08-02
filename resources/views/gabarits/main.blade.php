@@ -33,7 +33,7 @@
     <script src="{{ asset('vendor/bootstrap/dist/js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('vendor/iCheck/icheck.min.js') }}"></script>
     @yield ('js-link')
-
+@include('gabarits.footer')
     @yield ('js-script')
 </body>
 </html>
